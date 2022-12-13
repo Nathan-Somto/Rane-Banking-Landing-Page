@@ -1,0 +1,78 @@
+/* css for  landing page */
+
+/*
+Css reset
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-size:16px;
+    min-height:100vh;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+/*Mobile styles starts*/
+
+
+
+/*Navbar*/
+
+
+
+/*hero-section*/
+
+
+
+/*card-section*/
+
+
+
+
+/*setup-section*/
+
+
+
+
+
+/*Testimonals*/
+
+
+
+
+
+
+/*Mobile card*/
+
+
+
+
+
+
+/*Footer*/
+
+
+
+
+
+
+
+/*ends*/
+
+
+
+
+
+
+
+
+/*Desktop styles*/
+@media (min-width: 62em) {
+    
+}
+/*ends here*/
