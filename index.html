@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rane banking Landing page</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script src="app.js" defer></script>
 </head>
 <body>
@@ -15,7 +17,7 @@
     
         <nav class="mainNav">
             <ul class="mobileNav">
-                <li>Rane</li>
+                <li class="nav-item">Rane</li>
             </ul>
             <ul class="desktopNav">
                 <div class ="firstLinks">
@@ -25,15 +27,15 @@
                 <li class="nav-item">Download</li>
                 </div>
                 <div class ="secondLinks">
-                <li class="nav-item">Login</li>
-                <li class="nav-item"><a href="#" class="button">Sign Up</a></li>
+                <li class="nav-item"><a href="#" class="">Login</a></li>
+                <li ><a href="#" class="button normal">Sign Up</a></li>
                 </div>
             </ul>
         </nav>
       
         <div class="main-hero">
-            <div class="hero-text">
-            <h1>
+            <div data-aos="fade-up" data-aos-delay ='100' class="hero-text">
+            <h1 >
                 Digital banking 
                 <br/>
             at your fingertips
@@ -54,8 +56,8 @@
                     <div class="gradientBottom">
                         <p>EXPRESS<span>10/23</span></p>
                         <h3>CHETA MKPARU</h3>
-                        <div class="smallcircle"></div>
-                        <div class="smallcircle"></div>
+                        <div class="smallcircle one"></div>
+                        <div class="smallcircle two"></div>
                     </div>
                 </div>
             </div>
@@ -63,28 +65,150 @@
     </header>
     <main>
         <section class="card-section">
-            <h2>Power your growth
+            <h2 data-aos ="fade-up">Power your growth
             </h2>
-            <p>we connect businesses and customers to seamless,<br/> mordern banking experience</p>
+            <p data-aos="fade-right">we connect businesses and customers to seamless,<br/> mordern banking experience</p>
             <div class="features-container">
-                <div class="features-card"></div>
-                <div class="features-card"></div>
-                <div class="features-card"></div>
-                <div class="slider"></div>
+                <div class="features-card">
+                    <div class ="features-card-top flex">
+                        <h3>Budget funds</h3>
+                        <img src="/Assets/moneyBag.svg" alt=" naira money bag">
+                    </div>
+                    <p>Control your spending easy with a rane card using our special tap feature</p>
+                    <a href="#">Learn more </a>
+                </div>
+            
+                <div class="features-card ft-none">
+
+                 
+                <div class ="features-card-top  flex">
+                        <h3>Zero fees</h3>
+                        <img src="/Assets/checkMark.svg" alt="">
+                    </div>
+                    <p>Discover a world with no account maintenance fees, Premium value at zero costs.</p>
+                    <a href="#">Learn more </a>
+                    </div>
+                <div class="features-card f-none">
+                    <div class ="features-card-top flex">
+                        <h3>Custom made</h3>
+                        <img src="/Assets/creditCard.svg" alt="">
+                    </div>
+                    <p>Rane cards are unique and expertly customized to meet your style preferences</p>
+                    <a href="#">Learn more </a>
+                </div>
+            </div>
+            <div class="slider-container flex">
+                <div class="slider active"></div>
+                <div class="slider mid-active"></div>
+                <div class="slider mid-active"></div>
             </div>
         </section>
-        <section class="setup-section">
-
+        <section class="setup-section grid">
+            <div class="app-image">
+                <img src="/Assets/Iphone mockup 2.png" alt="">
+            </div>
+            <div class="setup-info">
+                <h2 data-aos="fade-up">Make faster transactions <br/>with these simple steps</h2>
+                <div class="steps-info">
+                    <div class="step" data-aos="fade-right" data-aos-delay="100">
+                        <h3><span>01</span>Create an account</h3>
+                        <p>Sign up on the web or mobile platform with your name, email address and a verified phone number.</p>
+                    </div>
+                    <div class="step" data-aos ="fade-left" data-aos-delay='150'>
+                        <h3><span>02</span>Choose your profile</h3>
+                        <p>select a business or customer profile to enjoy direct and flexible services.</p>
+                    </div>
+                    <div class="step"  data-aos="fade-right"  data-aos-delay ='200'>
+                        <h3><span>03</span>Request for a card</h3>
+                        <p>Get a customizable rane card to manage your transactions at no extra cost</p>
+                    </div>
+                    <div class="step" data-aos ='fade-left' data-aos-delay="250">
+                        <h3><span>04</span>Start banking</h3>
+                        <p>Pay on tap or budget funds in seconds . Welcome to the new era of banking</p>
+                    </div>
+                </div>
+                <a href="#" class ="button " data-aos ="zoom-out">Sign up now</a>
+            </div>
         </section>
         <section class="testimonals">
-
+            <h2 data-aos="fade-up">Trusted by 300,000 people across<br/> Nigeria</h2>
+            <div class="testimonals-card-container">
+            <div class="testimonals-card" data-aos ='fade-up'>
+                <p>"I no longer have to worry about those unexpected maintenance debits. My financial goals and peace of mind is assurd with Rane"</p>
+                <div class="testimonals-persona">
+                    <img src="/Assets/MaleUser.png" alt="Alex adetoun picture">
+                    <div class="testimonals-persona-info">
+                        <h3>Alex Adetoun</h3>
+                        <img src="/Assets/Group (1).svg" alt="rating stars">
+                    </div>
+                </div>
+            </div>
+            <div class="testimonals-card" data-aos="fade-up">
+                <p>"Rane has redefined the banking process whike helping my spending. The payment on tap is incredibly easy to use and versatile"</p>
+                <div class="testimonals-persona">
+                    <img src="/Assets/FemaleUser.png" alt="Alex adetoun picture">
+                    <div class="testimonals-persona-info">
+                        <h3>Hadiza Sani</h3>
+                        <img src="/Assets/Group (1).svg" alt="rating stars">
+                    </div>
+                </div>
+            </div>
+           
+</div>
+<div class="logos-container">
+    <img src="/Assets/Frame (1).svg" alt="">
+    <img src="/Assets/Frame (2).svg" alt="">
+    <img src="/Assets/Frame (3).svg" alt="">
+    <img src="/Assets/Frame.svg" alt="">
+    <img src="/Assets/Layer 2.svg" alt="">
+    <img src="/Assets/Frame (1).svg" alt="">
+    <img src="/Assets/Frame (2).svg" alt="">
+    <img src="/Assets/Frame (3).svg" alt="">
+    <img src="/Assets/Frame.svg" alt="">
+    <img src="/Assets/Layer 2.svg" alt="">
+</div>
         </section>
         <section class="mobile-card">
-
+        <div class="rectangle-container">
+            <h2>Bank with Rane <br/> on Mobile</h2>
+            <img src="/Assets/Badge iOS.svg" alt="ios badge">
+            <img src="/Assets/Badge Android.svg" alt="andriod badge">
+        </div>
+        <div class="mobile-app">
+            <img src="/Assets/Iphone mockup (1).png" alt="Iphone mockup app">
+        </div>
+        <img class="g-c-b" src="/Assets/gradientCircle.png" alt="gradient circle big">
+        <img  class ='g-c-s' src="/Assets/gradientCircle.png" alt="gradient Circle small">
         </section>
     </main>
     <footer class="mainFooter">
-
+        <div class="get-started">
+            <h2>Digital banking made<br/> for you</h2>
+            <a data-aos ='fade-left' data-aos-delay="200" href="#" class="button xl">Get started</a>
+        </div>
+        <div class="company">
+            <h3>Company</h3>
+            <a href="#">Bank with rane</a>
+            <a href="#">Partners</a>
+            <a href="#">Download</a>
+        </div>
+        <div class="Contact">
+            <h3>Contact us</h3>
+            <a href="#">+2340012345678</a>
+            <a href="#">Services@rane.com</a>
+            <div class ="social-links flex">
+                <img src="/Assets/image 6.svg" alt="">
+                <img src="/Assets/image 7.svg" alt="">
+            <img src="/Assets/image 8.svg" alt="">
+            <img src="/Assets/image 9.svg" alt="">
+                    </div>
+        </div>
+<p>&copy2022 Rane. All rights reserved</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
